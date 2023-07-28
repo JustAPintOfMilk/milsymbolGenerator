@@ -1,0 +1,352 @@
+[
+    {
+        "code": "00",
+        "desc": "Unknown"
+    },
+    {
+        "code": "01",
+        "desc": "Air",
+        "mod1": [
+            { "code": "00", "desc":"Not Applicable"},
+            { "code": "01", "desc":"Attack/Strike"},
+            { "code": "02", "desc":"Bomber"},
+            { "code": "03", "desc":"Cargo"},
+            { "code": "04", "desc":"Fighter"},
+            { "code": "05", "desc":"Interceptor"},
+            { "code": "06", "desc":"Tanker"},
+            { "code": "07", "desc":"Utility"},
+            { "code": "08", "desc":"Vertical or Short take-off and Landing (VSTOL)/Vertical Take.off and Landing (VTOL)"},
+            { "code": "09", "desc":"Passenger"},
+            { "code": "10", "desc":"Ultra Light"},
+            { "code": "11", "desc":"Airborne Command Post (APC)"},
+            { "code": "12", "desc":"Airborne Early Warning (AEW)"},
+            { "code": "13", "desc":"Government"},
+            { "code": "14", "desc":"Medical Evacuation (MEDEVAC)"},
+            { "code": "15", "desc":"Escort"},
+            { "code": "16", "desc":"Electronic Combat (EC)/Jammer"},
+            { "code": "17", "desc":"Patrol"},
+            { "code": "18", "desc":"Reconnaissence"},
+            { "code": "19", "desc":"Trainer"},
+            { "code": "20", "desc":"Photographic Reconnaissance"},
+            {"code":"21","desc":"Personal Recovery"},
+            { "code": "22", "desc":"Antisubmarine Warfare"},
+            { "code": "23", "desc":"Communications"},
+            { "code": "24", "desc":"Electronic Support (ES)"},
+            { "code": "25", "desc":"Mine Countermeasures (MCM)"},
+            { "code": "26", "desc":"Search and Rescue"},
+            { "code": "27", "desc":"Special Operation Forces"},
+            { "code": "28", "desc":"Surface Warfare"},
+            { "code": "29", "desc":"Very Important Person (VIP)"},
+            { "code": "30", "desc":"Combat Search and Rescue (CSAR)"},
+            { "code": "31", "desc":"Suppression of Enemy Air Defese"},
+            { "code": "32", "desc":"Antisurface Warfare"},
+            { "code": "33", "desc":"Fighter/Bomber"},
+            { "code": "34", "desc":"Intensive Care"},
+            { "code": "35", "desc":"Electronic Attack (EA)"},
+            { "code": "36", "desc":"Multimission"},
+            { "code": "37", "desc":"Hijacking"},
+            { "code": "38", "desc":"ASW Helo - LAMPS"},
+            { "code": "39", "desc":"ASW Helo- SH-60R"}
+        ],
+        "mod2": [
+        ],
+        "entities": [
+            {
+                "code": "110000",
+                "entity": "Military",
+                "types": [
+                    {
+                        "code": "110100",
+                        "entityType": "Fixed Wing",
+                        "subTypes": [
+                            {
+                                "code": "110101",
+                                "desc": "Medical Evacuation (MEDEVAC)"
+                            },
+                            {
+                                "code": "110102",
+                                "desc": "Attack/Strike"
+                            },
+                            {
+                                "code": "110103",
+                                "desc": "Bomber"
+                            },
+                            {
+                                "code": "110104",
+                                "desc": "Fighter"
+                            },
+                            {
+                                "code": "110105",
+                                "desc": "Fighter/Bomber"
+                            },
+                            {
+                                "code": "110107",
+                                "desc": "Cargo"
+                            },
+                            {
+                                "code": "110108",
+                                "desc": "Electronic Combat (EC)/Jammer"
+                            },
+                            {
+                                "code": "110109",
+                                "desc": "Tanker"
+                            },
+                            {
+                                "code": "110110",
+                                "desc": "Patrol"
+                            },
+                            {
+                                "code": "110111",
+                                "desc": "Reconnaissence"
+                            },
+                            {
+                                "code": "110112",
+                                "desc": "Trainer"
+                            },
+                            {
+                                "code": "110113",
+                                "desc": "Unity"
+                            },
+                            {
+                                "code": "110114",
+                                "desc": "Vertical or Short take-off and Landing (VSTOL)"
+                            },
+                            {
+                                "code": "110115",
+                                "desc": "Airborne Command Post (APC)"
+                            },
+                            {
+                                "code": "110116",
+                                "desc": "Airborne Early Warning (AEW)"
+                            },
+                            {
+                                "code": "110117",
+                                "desc": "Antisurface Warfare"
+                            },
+                            {
+                                "code": "110118",
+                                "desc": "Antisubmarine Warfare"
+                            },
+                            {
+                                "code": "110119",
+                                "desc": "Communications"
+                            },
+                            {
+                                "code": "110120",
+                                "desc": "Combat Search and Rescue (CSAR)"
+                            },
+                            {
+                                "code": "110121",
+                                "desc": "Electronic Support (ES)"
+                            },
+                            {
+                                "code": "110122",
+                                "desc": "Government"
+                            },
+                            {
+                                "code": "110123",
+                                "desc": "Mine Countermeasures (MCM)"
+                            },
+                            {
+                                "code": "110124",
+                                "desc": "Personal Recovery"
+                            },
+                            {
+                                "code": "110125",
+                                "desc": "Search and Rescue"
+                            },
+                            {
+                                "code": "110126",
+                                "desc": "Special Operation Forces"
+                            },
+                            {
+                                "code": "110127",
+                                "desc": "Ultra Light"
+                            },
+                            {
+                                "code": "110128",
+                                "desc": "Photographic Reconnaissance"
+                            },
+                            {
+                                "code": "110129",
+                                "desc": "Very Important Person (VIP)"
+                            },
+                            {
+                                "code": "110130",
+                                "desc": "Suppression of Enemy Air Defese"
+                            },
+                            {
+                                "code": "110131",
+                                "desc": "Passenger"
+                            },
+                            {
+                                "code": "110132",
+                                "desc": "Escort"
+                            },
+                            {
+                                "code": "110133",
+                                "desc": "Electronic Attack (EA)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "110200",
+                        "entityType": "Rotary Wing"
+                    },
+                    {
+                        "code": "110300",
+                        "entityType": "Unmanned Aircraft (UA) \n/Unmanned Aerial Vehicle (UAV)\n/Unmanned Aircraft System (UAS) \n/Remotely Piloted Vehicle (RPV)"
+                    },
+                    {
+                        "code": "110400",
+                        "entityType": ""
+                    },
+                    {
+                        "code": "110500",
+                        "entityType": "Lighter than Air"
+                    },
+                    {
+                        "code": "110600",
+                        "entityType": "Airship"
+                    },
+                    {
+                        "code": "110700",
+                        "entityType": "Tethered Lighter than Air"
+                    }
+                ]
+            },
+            {
+                "code": "120000",
+                "entity": "Civilian",
+                "types": [
+                    {
+                        "code": "120100",
+                        "entityType": "Fixed Wing"
+                    },
+                    {
+                        "code": "120200",
+                        "entityType": "Rotary Wing"
+                    },
+                    {
+                        "code": "120300",
+                        "entityType": "Unmanned Aircraft (UA) \n/Unmanned Aerial Vehicle (UAV)\n/Unmanned Aircraft System (UAS) \n/Remotely Piloted Vehicle (RPV)"
+                    },
+                    {
+                        "code": "120400",
+                        "entityType": "Ligther than Air"
+                    },
+                    {
+                        "code": "120500",
+                        "entityType": "Airship"
+                    },
+                    {
+                        "code": "120600",
+                        "entityType": "Tethered Lighter than Air"
+                    }
+                ]
+            },
+            {
+                "code": "130000",
+                "entity": "Weapon",
+                "types": [
+                    {
+                        "code": "130100",
+                        "entityType": "Bomb"
+                    },
+                    {
+                        "code": "130200",
+                        "entityType": "Decoy"
+                    }
+                ]
+            },
+            {
+                "code": "140000",
+                "entity": "Manual Track"
+            }
+        ]
+    },
+    {
+        "code": "02",
+        "desc": "Air Missle"
+    },
+    {
+        "code": "05",
+        "desc": "Space"
+    },
+    {
+        "code": "06",
+        "desc": "Space Missle"
+    },
+    {
+        "code": "10",
+        "desc": "Land Unit"
+    },
+    {
+        "code": "11",
+        "desc": "Land Civilian Unit/Organisation"
+    },
+    {
+        "code": "15",
+        "desc": "Land Equipment"
+    },
+    {
+        "code": "20",
+        "desc": "Land Installation"
+    },
+    {
+        "code": "25",
+        "desc": "Control Measure"
+    },
+    {
+        "code": "30",
+        "desc": "Sea Surface"
+    },
+    {
+        "code": "35",
+        "desc": "Sea Subsurface"
+    },
+    {
+        "code": "36",
+        "desc": "Mine Warfare"
+    },
+    {
+        "code": "40",
+        "desc": "Activities"
+    },
+    {
+        "code": "45",
+        "desc": "Atmospheric"
+    },
+    {
+        "code": "46",
+        "desc": "Oceanographi"
+    },
+    {
+        "code": "47",
+        "desc": "Metrological Space"
+    },
+    {
+        "code": "50",
+        "desc": "Signals Intelligence - Space"
+    },
+    {
+        "code": "51",
+        "desc": "Signals Intelligence - Air"
+    },
+    {
+        "code": "52",
+        "desc": "Signals Intelligence - Land"
+    },
+    {
+        "code": "53",
+        "desc": "Signals Intelligence - Surface"
+    },
+    {
+        "code": "54",
+        "desc": "Signals Intelligence - Subsurface"
+    },
+    {
+        "code": "60",
+        "desc": "Cyberspace"
+    }
+]

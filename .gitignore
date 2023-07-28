@@ -1,0 +1,31 @@
+### Node ###
+# Logs
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Dependency directories
+node_modules
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file(s)
+.env
+.env.*
+
+#Build generated
+.webpack
+binaries
+
+# Test generated
+coverage/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*debug.log

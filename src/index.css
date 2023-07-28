@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root,
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.App>* {
+  border: 1px solid black;
+}
+.milSymbolPreview{
+  width: max(20vw, 200px);
+  height: max(20vw, 200px);;
+  display: flex;
+  flex-direction: column;
+}
+.milSymbolPreview>img{
+  max-width:  200px;
+  margin: auto;
+}
+.selections{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.grow{
+  flex-grow: 1;
+}
+
+.fullWidth {
+  width: 100%;
+}
+.border{
+  border:1px solid black;
+  border-radius: 5px;
+}
+
+.fullHeight {
+  height: 100%;
+}
+.marginAuto{
+  margin:auto;
+}

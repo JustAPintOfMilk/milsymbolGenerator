@@ -1,0 +1,24 @@
+directories:
+  output: binaries
+  buildResources: build
+appId: chris.witte.maproject
+productName: maproject
+copyright: ${author}
+extends: null
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: 'public/icon.ico'
+linux:
+  target:
+    - target: deb
+    - target: tar.gz
+    - target: Appimage
+    - target: snap
+  icon: 'public/icon.ico'
+  category: 'Office'
+  files:
+    - '.webpack'
+electronVersion: 24.3.0

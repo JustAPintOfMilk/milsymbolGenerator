@@ -1,0 +1,182 @@
+{
+    "env": {
+        "node": true,
+        "jest": true,
+        "amd": true,
+        "es6":true,
+        "browser": true
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+    "extends":[
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": true,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "react/display-name":2,
+        "react/no-deprecated":2,
+        "react/no-is-mounted":2,
+        "react/no-render-return-value":2,
+        "react/no-unescaped-entities": 2,
+        "react/no-unknown-property": 2,
+        "react/jsx-indent":4,
+        "react/jsx-key":2,
+        "react/jsx-uses-react": 1,
+        "react/jsx-uses-vars": 1,
+        "react/jsx-no-duplicate-props":1,
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "semi": [
+            "warn",
+            "never"
+        ],
+        "accessor-pairs": "warn",
+        "block-scoped-var": "error",
+        "class-methods-use-this": "warn",
+        "complexity": [
+            "warn",
+            15
+        ],
+        "default-case": "error",
+        "max-classes-per-file": [
+            "error",
+            1
+        ],
+        "no-alert": [
+            "warn"
+        ],
+        "no-else-return": [
+            "error",
+            {
+                "allowElseIf": false
+            }
+        ],
+        "no-undef": "error",
+        "no-eq-null": "error",
+        "no-eval": "warn",
+        "no-fallthrough": "error",
+        "no-floating-decimal": "error",
+        "no-global-assign": "error",
+        "no-implicit-coercion": "error",
+        "no-implied-eval": "error",
+        "no-lone-blocks": "error",
+        "no-multi-spaces": [
+            "warn",
+            {
+                "exceptions": {
+                    "Property": true
+                }
+            }
+        ],
+        "no-multi-str": "error",
+        "no-new": "error",
+        "no-new-func": "error",
+        "no-octal": "error",
+        "no-octal-escape": "error",
+        "no-redeclare": "error",
+        "no-return-assign": "error",
+        "no-return-await": "error",
+        "no-script-url": "error",
+        "no-self-assign": "error",
+        "no-self-compare": "error",
+        "no-throw-literal": "error",
+        "no-unused-labels": "warn",
+        "no-useless-catch": "error",
+        "no-warning-comments": "warn",
+        "yoda": [
+            "error",
+            "never",
+            {
+                "exceptRange": true
+            }
+        ],
+        "for-direction": "error",
+        "getter-return": "error",
+        "no-await-in-loop": "error",
+        "no-compare-neg-zero": "error",
+        "no-cond-assign": "error",
+        "no-constant-condition": "error",
+        "no-debugger": "warn",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-empty": "warn",
+        "no-ex-assign": "error",
+        "no-template-curly-in-string": "warn",
+        "no-unreachable": "error",
+        "no-unsafe-finally": "error",
+        "use-isnan": "error",
+        "no-delete-var": "warn",
+        "no-label-var": "error",
+        "no-shadow": "error",
+        "no-shadow-restricted-names": "error",
+        "no-unused-vars": "warn",
+        "callback-return": "error",
+        "global-require": "error",
+        "handle-callback-err": "error",
+        "no-mixed-requires": "warn",
+        "no-new-require": "warn",
+        "brace-style": "warn",
+        "new-cap": "warn",
+        "max-depth": [
+            "error",
+            3
+        ],
+        "max-lines": [
+            "error",
+            {
+                "max": 600,
+                "skipBlankLines": true,
+                "skipComments": true
+            }
+        ],
+        "max-lines-per-function": [
+            "warn",
+            150
+        ],
+        "max-statements-per-line": [
+            "warn",
+            {
+                "max": 3
+            }
+        ],
+        "new-parens": "warn",
+        "no-lonely-if": "warn",
+        "no-multiple-empty-lines": "warn",
+        "no-trailing-spaces": "warn",
+        "no-whitespace-before-property": "warn",
+        "one-var": [
+            "error",
+            "never"
+        ],
+        "no-const-assign": "warn",
+        "no-duplicate-imports": "warn",
+        "no-new-symbol": "warn"
+    }
+}
