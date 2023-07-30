@@ -16,7 +16,7 @@ type options = {
 const SymbolSet = ({ options, setter, part }: options) => {
     return <>
         <Select value={part} onChange={e => setter(e.target.value)}>
-            {options.map((option) => <MenuItem value={option.code}>{option.desc}</MenuItem>)}
+            {options.map((option, index) => <MenuItem key={index} value={option.code}>{option.desc}</MenuItem>)}
         </Select>
     </>
 }

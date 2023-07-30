@@ -26,8 +26,8 @@ export const MSSelect = ({ setter, part, options, showTag = "Top", position }: m
     return <>
         <Select value={part} onChange={e => setter(e.target.value)}>
             {
-                options.map(option =>
-                    <MenuItem value={option.code}>{createIcon(strReplaceAt(DEFAULTSIDC, position, option.code), showTag === "Top" ? option.desc : "")}{showTag === "Side" && option.desc}</MenuItem>
+                options.map((option, index) =>
+                    <MenuItem key={index} value={option.code}>{createIcon(strReplaceAt(DEFAULTSIDC, position, option.code), showTag === "Top" ? option.desc : "")}{showTag === "Side" && option.desc}</MenuItem>
                 )
             }
         </Select>

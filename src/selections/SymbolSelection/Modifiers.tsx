@@ -11,12 +11,12 @@ type modifiersType = {
 const Modifiers = ({ modOnes, mod1, mod1Setter, modTwos, mod2, mod2Setter }: modifiersType) => {
     return <div className='row wrap'>
         {
-            modOnes && modOnes.length > 0 && <Select value={mod1} onChange={e => mod1Setter(e.target.value)}>
+            modOnes && modOnes.length > 0 && <Select sx={{ minWidth: '200px' }} value={mod1} onChange={e => mod1Setter(e.target.value)}>
                 {modOnes.map(option => <MenuItem key={option.code} value={option.code}>{option.desc}</MenuItem>)}
             </Select>
         }
         {
-            modTwos && modTwos.length > 0 && <Select value={mod2} onChange={e => mod2Setter(e.target.value)}>
+            modTwos && modTwos.length > 0 && <Select sx={{ minWidth: '200px' }} value={mod2} onChange={e => mod2Setter(e.target.value)}>
                 {modTwos.map(option => <MenuItem key={option.code} value={option.code}>{option.desc}</MenuItem>)}
             </Select>
         }
