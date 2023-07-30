@@ -3,7 +3,7 @@ import ms from 'milsymbol'
 import { Select, MenuItem } from "@mui/material";
 import { DEFAULTSIDC } from './defaults';
 
-export const createIcon = (sidc: string, desc?: string) => <img className='border marginAuto' src={new ms.Symbol(sidc, { size: 50, quantity: desc }).asCanvas().toDataURL()} />
+export const createIcon = (sidc: string, desc?: string) => <img className='marginRight' src={new ms.Symbol(sidc, { size: 50, quantity: desc }).asCanvas().toDataURL()} />
 export const strReplaceAt = function (str: string, index: number, replacement: string) {
     return str.substring(0, index) + replacement + str.substring(index + replacement.length);
 }

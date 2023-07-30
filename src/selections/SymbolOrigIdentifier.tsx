@@ -5,8 +5,9 @@ import * as React from 'react';
 type options = {
     setter: (part: string) => void
     part: string
+    length?: number
 }
-const SymbolOrigIdentifier = ({ setter, part }: options) => {
+const SymbolOrigIdentifier = ({ setter, part, length = 3 }: options) => {
 
     return <>
         <TextField
@@ -17,8 +18,8 @@ const SymbolOrigIdentifier = ({ setter, part }: options) => {
             }}
             value={part}
             onChange={e => {
-                const value = e.target.value.padStart(3, "0")
-                if (value.length === 3&& !value.includes("-")) {
+                const value = e.target.value.padStart(length, "0")
+                if (value.length === length && !value.includes("-")) {
                     setter(value)
                 }
             }}

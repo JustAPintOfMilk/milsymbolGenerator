@@ -23,44 +23,79 @@ code {
 .App>* {
   border: 1px solid black;
 }
-.milSymbolPreview{
-  width: max(20vw, 200px);
-  height: max(20vw, 200px);;
+
+.leftSidebar {
+  width: min(20vw, 200px);
+  padding: 5px;
+}
+
+.milSymbolPreview {
+  width: 100%;
+  height: min(20vw, 200px);
   display: flex;
   flex-direction: column;
 }
-.milSymbolPreview>img{
-  max-width:  200px;
+
+.milSymbolPreview>img {
+  max-width: 100%;
   margin: auto;
 }
-.selections{
+
+.selections {
   flex: 1;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  padding: 10px;
 }
-.row{
+
+.row {
   display: flex;
   flex-direction: row;
 }
-.column{
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.column {
   display: flex;
   flex-direction: column;
 }
-.grow{
+
+.grow {
   flex-grow: 1;
 }
 
 .fullWidth {
   width: 100%;
 }
-.border{
-  border:1px solid black;
+
+.border {
+  border: 1px solid black;
   border-radius: 5px;
 }
 
 .fullHeight {
   height: 100%;
 }
-.marginAuto{
-  margin:auto;
+
+.marginAuto {
+  margin: auto;
+}
+
+.marginRight {
+  margin-right: auto;
+}
+
+.marginTop {
+  margin-top: auto;
+}
+
+.marginLeft {
+  margin-left: auto;
+}
+
+.marginBottom {
+  margin-bottom: auto;
 }

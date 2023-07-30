@@ -23,11 +23,6 @@ const STATUSOPTIONS: statusOption[] = [
     // { code: "9", desc: "Version extension flag" }
 ]
 
-const Status = ({ setter, part }: options) => {
-
-    return <div>
-        <MSSelect options={STATUSOPTIONS} setter={setter} part={part} position={6} showTag="Top" />
-    </div>
-}
+const Status = ({ setter, part }: options) => <MSSelect options={STATUSOPTIONS} setter={setter} part={part} position={6} showTag="Side" />
 
 export default Status;

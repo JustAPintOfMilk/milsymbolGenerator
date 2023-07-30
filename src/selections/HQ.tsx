@@ -1,4 +1,3 @@
-import { Select, MenuItem } from '@mui/material';
 import * as React from 'react';
 import { MSSelect } from '../utils';
 
@@ -24,6 +23,6 @@ const HQOPTIONS: hqOption[] = [
     // { code: "9", desc: "Version extension flag" }
 ]
 const HQ = ({ setter, part }: options) =>
-    <MSSelect options={HQOPTIONS} part={part} setter={setter} position={7} showTag="Top" />
+    <MSSelect options={HQOPTIONS} part={part} setter={setter} position={7} showTag="Side" />
 
 export default HQ;
