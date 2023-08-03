@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MSSelect } from '../utils';
+import MsSelect from './pickers/MsSelect';
 
 //pos8
 type options = {
@@ -23,6 +23,6 @@ const HQOPTIONS: hqOption[] = [
     // { code: "9", desc: "Version extension flag" }
 ]
 const HQ = ({ setter, part }: options) =>
-    <MSSelect options={HQOPTIONS} part={part} setter={setter} position={7} showTag="Side" />
+    <MsSelect options={HQOPTIONS} part={part} setter={setter} position={7} showTag="Side" />
 
 export default HQ;

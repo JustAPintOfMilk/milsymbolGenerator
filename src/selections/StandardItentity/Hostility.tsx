@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MSSelect } from '../../utils';
+import MsSelect from '../pickers/MsSelect';
 
 //pos3-4
 type options = {
@@ -24,7 +24,7 @@ const HOSTILITYOPTIONS: HostilityOption[] = [
 
 
 const Hostility = ({ setter, part }: options) =>
-    <MSSelect options={HOSTILITYOPTIONS} setter={setter} part={part} position={3} showTag="Side" />
+    <MsSelect options={HOSTILITYOPTIONS} setter={setter} part={part} position={3} showTag="Side" />
 
 
 export default Hostility;

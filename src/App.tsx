@@ -10,12 +10,12 @@ import { DEFAULTSIDC } from './defaults'
 import SymbolSelection from './selections/SymbolSelection/SymbolSelection'
 import Hostility from './selections/StandardItentity/Hostility'
 import Context from './selections/StandardItentity/Context'
-import NumericValuePicker from './selections/ModifiersTextfields/Size'
+import NumericValuePicker from './selections/pickers/NumericValuePicker'
 
 const App = () => {
     const [hasCopied, setCopied] = React.useState(false)
     const [options, setOptions] = React.useState({
-        size: 200,
+        size: 50,
         additionalInformation: "",
         altitudeDepth: "",
         combatEffectiveness: "",
@@ -61,7 +61,7 @@ const App = () => {
     const blob = new Blob([symbol.asSVG()], { type: "image/svg+xml;charset=utf-8" })
     const svgUrl = URL.createObjectURL(blob)
     return (
-        <div className="App" >
+        <Paper className="App" >
             <div className="leftSidebar">
                 <div className='milSymbolPreview'>
                     <img src={symbolUrl} />
@@ -69,16 +69,16 @@ const App = () => {
                         <Button onClick={() => {
                             navigator.clipboard.writeText(sidc)
                             setCopied(true)
-                        }}>{`${sidc}\nCopy`}</Button>
+                        }}>{sidc}</Button>
                         <Snackbar open={hasCopied} onClose={() => setCopied(false)} autoHideDuration={3000}>
                             <Alert severity="info">Copied</Alert>
                         </Snackbar>
                         <Paper className="row">
-                            <a href={svgUrl} download={`${sidc}.svg`} target='_blank' className='marginRight'>
-                                <Button>SVG</Button>
+                            <a href={svgUrl} download={`${sidc}.svg`} target='_blank' className='grow'>
+                                <Button fullWidth>SVG</Button>
                             </a>
-                            <a href={symbolUrl} download={`${sidc}.png`} target='_blank' className='marginLeft'>
-                                <Button>PNG</Button>
+                            <a href={symbolUrl} download={`${sidc}.png`} target='_blank' className='grow'>
+                                <Button fullWidth>PNG</Button>
                             </a>
                         </Paper>
                     </div>
@@ -127,7 +127,7 @@ const App = () => {
                     <AccordionDetails className="column" >
                         <div className="row">
                             <div className="marginAuto">
-                                <NumericValuePicker value={options.size} setValue={(value: number) => setOptions({ ...options, size: value })} min={50} max={2000} title="Size" />
+                                <NumericValuePicker value={options.size} setValue={(value: number) => setOptions({ ...options, size: value })} min={50} max={200} title="Size" />
                             </div>
                         </div>
                         <div className="column">
@@ -152,7 +152,7 @@ const App = () => {
                                 onChange={e => setOptions({ ...options, country: e.target.value })} />
                             <Paper className='column full'>
                                 <Typography variant='h6' align='center'>Movement</Typography>
-                                <div className='row'>
+                                <div className='row wrap'>
                                     <div className="marginAuto">
                                         <NumericValuePicker clear={() => setOptions({ ...options, direction: "" })} value={Number(options.direction)} setValue={(value: number) => setOptions({ ...options, direction: value.toString() })} min={0} max={359} title="Direction" />
                                     </div>
@@ -162,14 +162,15 @@ const App = () => {
                                             value={options?.speed || ""}
                                             onChange={e => setOptions({ ...options, speed: e.target.value })} />
                                     </div>
+                                    <div className="marginAuto">
+                                        <NumericValuePicker
+                                            title="Speed Leader in px"
+                                            min={0}
+                                            max={2000}
+                                            value={options?.speedLeader || 0}
+                                            setValue={(value: number) => setOptions({ ...options, speedLeader: value })} />
+                                    </div>
                                 </div>
-                                <NumericValuePicker
-                                    title="Speed Leader in px"
-                                    min={0}
-                                    max={2000}
-                                    value={options?.speedLeader || 0}
-                                    setValue={(value: number) => setOptions({ ...options, speedLeader: value })} />
-
                             </Paper>
                             <TextField label="DTG" type="text"
                                 inputProps={{ maxLength: 16 }}
@@ -264,7 +265,7 @@ const App = () => {
                 <SymbolOrigIdentifier part={sidc.charAt(23)} setter={(part) => setStateAt(23, part)} length={1} />
                 <SymbolOrigIdentifier part={sidc.substring(24, 30)} setter={(part) => setStateAt(24, part)} length={6} /> */}
             </div>
-        </div >
+        </Paper >
     )
 }
 

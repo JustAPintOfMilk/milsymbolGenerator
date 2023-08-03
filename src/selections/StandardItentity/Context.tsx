@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MSSelect } from '../../utils';
+import MsSelect from '../pickers/MsSelect';
 
 //pos3-4
 type options = {
@@ -19,7 +19,7 @@ const CONTEXTOPTIONS: contextOption[] = [
 ]
 
 const Context = ({ setter, part }: options) =>
-    <MSSelect options={CONTEXTOPTIONS} setter={setter} part={part} position={2} showTag="Side" />
+    <MsSelect options={CONTEXTOPTIONS} setter={setter} part={part} position={2} showTag="Side" />
 
 
 export default Context;

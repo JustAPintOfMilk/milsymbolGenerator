@@ -14,6 +14,7 @@ code {
 
 #root,
 .App {
+  min-width: 300px;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -21,27 +22,29 @@ code {
 }
 
 .App>* {
-  border: 1px solid black;
+  border: 1px solid rgb(83, 83, 83);
 }
 
 .leftSidebar {
-  width: min(20vw, 200px);
+  width: max(20vw, 200px);
   padding: 5px;
 }
 
 .milSymbolPreview {
   width: 100%;
-  height: min(20vw, 200px);
   display: flex;
   flex-direction: column;
 }
 
 .milSymbolPreview>img {
-  max-width: 100%;
+  max-width: 20vw;
+  max-height: 20vh;
   margin: auto;
 }
 
 .selections {
+  max-width: 800px;
+  margin: 0 auto;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -98,4 +101,21 @@ code {
 
 .marginBottom {
   margin-bottom: auto;
+}
+
+
+@media (max-width: 700px) {
+
+  #root,
+  .App {
+    min-width: 300px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .leftSidebar {
+    width: auto;
+    padding: 5px;
+  }
 }

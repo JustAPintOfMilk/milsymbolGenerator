@@ -1,7 +1,5 @@
-import { Button, MenuItem, Select, TextField } from '@mui/material';
 import * as React from 'react';
-import { MSSelect, createIcon, strReplaceAt } from '../utils';
-import { DEFAULTSIDC } from '../defaults';
+import MsSelect from './pickers/MsSelect';
 
 //pos7
 type options = {
@@ -23,6 +21,6 @@ const STATUSOPTIONS: statusOption[] = [
     // { code: "9", desc: "Version extension flag" }
 ]
 
-const Status = ({ setter, part }: options) => <MSSelect options={STATUSOPTIONS} setter={setter} part={part} position={6} showTag="Side" />
+const Status = ({ setter, part }: options) => <MsSelect options={STATUSOPTIONS} setter={setter} part={part} position={6} showTag="Side" />
 
 export default Status;

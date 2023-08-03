@@ -7,13 +7,14 @@ type sizeOptions = {
     min: number,
     max: number,
     title: string,
-    clear?: Function
+    clear?: Function,
+    step?: number
 }
-const NumericValuePicker = ({ value, setValue, min, max, title, clear }: sizeOptions): JSX.Element => <Paper>
+const NumericValuePicker = ({ value, setValue, step = 1, min, max, title, clear }: sizeOptions): JSX.Element => <Paper>
     <Typography>{title}</Typography>
     <Slider
         value={value}
-        step={1}
+        step={step}
         valueLabelDisplay="auto"
         marks={[{ value: min, label: min }, { value: max, label: max }]}
         onChange={(_, value) => setValue(value as number)}

@@ -14,7 +14,7 @@ type symbolSelectionType = {
 
 const SymbolSelection = ({ set, setSetter, entity, entitySetter, mod1, mod1Setter, mod2, mod2Setter }: symbolSelectionType) => {
     const setObj = setsArr.find(option => option.code === set)
-    return <div className="row">
+    return <div className="row wrap">
         <SymbolSet options={setsArr} part={set} setter={setSetter} />
         {
             setObj && <div className="column">

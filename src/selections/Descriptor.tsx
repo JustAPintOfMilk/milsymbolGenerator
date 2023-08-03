@@ -1,6 +1,6 @@
 import { TextField } from '@mui/material';
 import * as React from 'react';
-import { MSSelect } from '../utils';
+import MsSelect from './pickers/MsSelect';
 
 //pos9-10
 type options = {
@@ -50,6 +50,6 @@ const DESCRIPTOROPTIONS: descriptorOption[] = [
 ]
 
 const Descriptor = ({ setter, part }: options) =>
-    <MSSelect options={DESCRIPTOROPTIONS} part={part} setter={setter} position={8} showTag="Side" />
+    <MsSelect options={DESCRIPTOROPTIONS} part={part} setter={setter} position={8} showTag="Side" />
 
 export default Descriptor;
